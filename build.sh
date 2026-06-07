@@ -39,7 +39,7 @@ KERNEL_SRC="$(realpath "$KERNEL_SRC")"
 MKBOOTIMG="${SCRIPT_DIR}/mkbootimg"
 
 # ---- Environment: ccache + LLVM --------------------------------------------
-if [ -z "$CCACHE_DIR" ]; then
+if [ -z "${CCACHE_DIR:-}" ]; then
     export CCACHE_DIR="/home/runner/.ccache"
     export CCACHE_MAXSIZE="10G"
     export CCACHE_SLOPPINESS="file_macro,locale,time_macros"
