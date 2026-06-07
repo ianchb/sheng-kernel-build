@@ -1,0 +1,10 @@
+# Build output
+out/
+
+# ccache
+.ccache/
+
+# Editor files
+*~
+*.swp
+*.swo
