@@ -18,7 +18,7 @@ env:
 
 jobs:
   build:
-    runs-on: ubuntu-latest-arm
+    runs-on: ubuntu-24.04-arm
     timeout-minutes: 360
     name: Build Kernel
 
